@@ -35,7 +35,7 @@ Rails.application.routes.draw do
     end
 
     scope 'users' do
-      get 'login', to: 'users#login'
+      post 'login', to: 'users#login'
       get 'show/:id', to: 'users#show'
       post 'create', to: 'users#create'
       patch 'update', to: 'users#update'
